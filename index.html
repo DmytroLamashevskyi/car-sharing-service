@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Car Sharing Service</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="js/script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+    <main class="main">
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Lux cars logo"/>
+        </div>
+        <nav class="navmenu">
+          <ul>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Reserve</a></li>
+          </ul>
+        </nav>
+        <a href="tel:07123456789" class="phone">071 2345 6789</a>
+      </div>
+    </header>
+    
+    <section class="main-content">
+      <div class="container">
+        <div class="main-info">
+          <h1>Conquer the roads behind the wheel of legendary cars!</h1>
+          <p>From exclusive sports cars to racing masterpieces, choose your dream, get behind the wheel, and experience the full power of a premium vehicle!</p>
+          <a href="#" class="button">View cars</a>
+        </div>
+        <img src="images/main-car.png" class="main-image" alt="Main Car">
+      </div>
+    </section>
+      
+    <div class="black-block"></div>
+  </main>
   </body>
 </html>
