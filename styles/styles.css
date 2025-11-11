@@ -21,6 +21,7 @@ body {
   height: 64px;
   padding: 20px;
   background-color: #F8FF23;
+  text-align: center;
   box-sizing: border-box;
   color: black;
   outline: 0;
@@ -32,7 +33,7 @@ body {
 }
 
 .button:hover {
-  background-color: #c9ce33;
+  background-color: #A8AE16;
 }
 
 .main {
@@ -85,7 +86,7 @@ body {
 }
 
 .navmenu ul a:hover {
-  color: #F8FF23;
+  color: #A8AE16;
 }
 
 .phone {
