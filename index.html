@@ -6,7 +6,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="styles/styles.css" />
-  <script type="module" src="js/script.js"></script>
 </head>
 
 <body>
@@ -18,8 +17,8 @@
         </div>
         <nav class="navmenu">
           <ul>
-            <li><a href="#">Cars</a></li>
-            <li><a href="#">Reserve</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#request-form">Reserve</a></li>
           </ul>
         </nav>
         <a href="tel:07123456789" class="phone">071 2345 6789</a>
@@ -32,7 +31,7 @@
           <h1>Conquer the roads behind the wheel of legendary cars!</h1>
           <p>From exclusive sports cars to racing masterpieces, choose your dream, get behind the wheel, and experience
             the full power of a premium vehicle!</p>
-          <a href="#" class="button">View cars</a>
+          <a href="#cars" class="button" id="main-action-button">View cars</a>
         </div>
         <img src="images/main-car.png" class="main-image" alt="Main Car">
       </div>
@@ -41,10 +40,10 @@
     <div class="black-block"></div>
   </main>
 
-  <section class="cars">
+  <section class="cars" id="cars">
     <div class="container">
       <h2>Choose car</h2>
-      <div class="cars-content">
+      <div class="cars-content" id="carsContent">
         <aside class="cars-filter">
           <ul>
             <li class="active">All</li>
@@ -80,7 +79,7 @@
                       <div class="car-price">1100 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -105,7 +104,7 @@
                       <div class="car-price">1250 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -130,7 +129,7 @@
                       <div class="car-price">2600 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -155,7 +154,7 @@
                       <div class="car-price">2900 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -180,7 +179,7 @@
                       <div class="car-price">1450 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -205,7 +204,7 @@
                       <div class="car-price">1350 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -230,7 +229,7 @@
                       <div class="car-price">950 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -255,7 +254,7 @@
                       <div class="car-price">800 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -280,7 +279,7 @@
                       <div class="car-price">1100 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -305,7 +304,7 @@
                       <div class="car-price">1600 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -330,7 +329,7 @@
                       <div class="car-price">1000 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -355,7 +354,7 @@
                       <div class="car-price">1000 $<span>/Day</span></div>
                     </li>
                   </ul>
-                  <a href="#" class="button button-white">Book</a>
+                  <a href="#request-form" class="button button-white">Book</a>
                 </div>
               </div>
             </article>
@@ -367,17 +366,29 @@
     </div>
   </section>
 
-  <section class="request-form">
+  <section class="request-form" id="request-form">
     <div class="container">
       <img src="images/order-car.png"  alt="Car">
       <form>
         <h3>Book a car</h3>
         <p>Fill in your contact information and we will call you back to discuss the details and confirm your booking.</p>
         <div class="form-inputs">
-          <input type="text" placeholder="Car"/>
-          <input type="text" placeholder="Your name"/>
-          <input type="text" placeholder="Phone"/>
-          <button class="button" type="button">Book now</button>
+          <div class="field">
+            <input type="text" id="carName" placeholder="Car" />
+            <small class="error-message" id="carNameError"></small>
+          </div>
+        
+          <div class="field">
+            <input type="text" id="customerName" placeholder="Your name" />
+            <small class="error-message" id="customerNameError"></small>
+          </div>
+        
+          <div class="field">
+            <input type="text" id="customerPhone" placeholder="Phone" />
+            <small class="error-message" id="customerPhoneError"></small>
+          </div>
+        
+          <button class="button" id="submitRequest" type="button">Book now</button>
         </div>
       </form>
     </div>
@@ -393,5 +404,7 @@
       </div>
     </div>
   </footer>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
