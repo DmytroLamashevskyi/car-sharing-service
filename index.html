@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Car Sharing Service</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script type="module" src="js/script.js"></script>
-  </head>
-  <body>
-    <main class="main">
+
+<head>
+  <title>Car Sharing Service</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script type="module" src="js/script.js"></script>
+</head>
+
+<body>
+  <main class="main">
     <header class="header">
       <div class="container">
         <div class="logo">
-          <img src="images/logo.png" alt="Lux cars logo"/>
+          <img src="images/logo.png" alt="Lux cars logo" />
         </div>
         <nav class="navmenu">
           <ul>
@@ -23,19 +25,373 @@
         <a href="tel:07123456789" class="phone">071 2345 6789</a>
       </div>
     </header>
-    
+
     <section class="main-content">
       <div class="container">
         <div class="main-info">
           <h1>Conquer the roads behind the wheel of legendary cars!</h1>
-          <p>From exclusive sports cars to racing masterpieces, choose your dream, get behind the wheel, and experience the full power of a premium vehicle!</p>
+          <p>From exclusive sports cars to racing masterpieces, choose your dream, get behind the wheel, and experience
+            the full power of a premium vehicle!</p>
           <a href="#" class="button">View cars</a>
         </div>
         <img src="images/main-car.png" class="main-image" alt="Main Car">
       </div>
     </section>
-      
+
     <div class="black-block"></div>
   </main>
-  </body>
+
+  <section class="cars">
+    <div class="container">
+      <h2>Choose car</h2>
+      <div class="cars-content">
+        <aside class="cars-filter">
+          <ul>
+            <li class="active">All</li>
+            <li>Lamborghini</li>
+            <li>Ferrari</li>
+            <li>Porsche</li>
+            <li>BMW</li>
+            <li>Mercedes</li>
+            <li>Chevrolet</li>
+            <li>Audi</li>
+            <li>Ford</li>
+          </ul>
+        </aside>
+        <div class="cars-items">
+          <div class="cars-items">
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/1.png" alt="BMW M4 Competition">
+              <div class="car-details">
+                <h4>BMW M4 Competition</h4>
+                <p>The perfect balance of speed and style. The BMW M4 Competition delivers 510 hp and a drive engineered to conquer highways and city streets.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">1450 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">1300 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">1100 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/2.png" alt="BMW M5">
+              <div class="car-details">
+                <h4>BMW M5</h4>
+                <p>Business class with a racer's soul. BMW M5: 600 hp, intelligent all-wheel drive and comfort for the most demanding drivers.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">1600 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">1450 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">1250 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/3.png" alt="Lamborghini Huracan Spyder Green">
+              <div class="car-details">
+                <h4>Lamborghini Huracan Spyder Green</h4>
+                <p>The embodiment of speed and passion. The green Lamborghini Huracan Spyder offers 640 hp and an open top for unforgettable adventures.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">3200 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">2900 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">2600 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/4.png" alt="Ferrari F8 Spider">
+              <div class="car-details">
+                <h4>Ferrari F8 Spider</h4>
+                <p>A dream on wheels. Ferrari F8 Spider: 720 hp, F1-inspired aerodynamics and an open cockpit for those who live at full speed.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">3500 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">3200 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">2900 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/5.png" alt="Porsche 911 Targa 4S Yellow">
+              <div class="car-details">
+                <h4>Porsche 911 Targa 4S Yellow</h4>
+                <p>Elegant power in a bold color. Porsche 911 Targa 4S: all-wheel drive, 450 hp and the iconic Targa style.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">1800 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">1650 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">1450 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/6.png" alt="Mercedes SL 55 AMG">
+              <div class="car-details">
+                <h4>Mercedes SL 55 AMG</h4>
+                <p>Classic sports chic. Mercedes SL 55 AMG: luxury, a convertible body and 469 hp for unforgettable drives.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">1700 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">1550 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">1350 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/7.png" alt="BMW Z4">
+              <div class="car-details">
+                <h4>BMW Z4</h4>
+                <p>A compact convertible for stylish journeys. BMW Z4: the perfect blend of agility, power and elegant design.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">1200 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">1100 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">950 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/8.png" alt="Mercedes C180 Convertible">
+              <div class="car-details">
+                <h4>Mercedes C180 Convertible</h4>
+                <p>The perfect choice for a sunny day. Mercedes C180 Convertible: a cabriolet made for light and comfortable driving.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">1000 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">900 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">800 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+          
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/9.png" alt="Chevrolet Corvette Orange">
+              <div class="car-details">
+                <h4>Chevrolet Corvette Orange</h4>
+                <p>Bright, powerful, unforgettable. The orange Chevrolet Corvette delivers 495 hp and a style that speaks for itself.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">1400 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">1250 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">1100 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/10.png" alt="Audi R8 Blue">
+              <div class="car-details">
+                <h4>Audi R8 Blue</h4>
+                <p>A supercar created for those in love with speed. Audi R8 Blue: all-wheel drive, 570 hp and a stunning design.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">2000 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">1850 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">1600 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+            
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/11.png" alt="Chevrolet Corvette White">
+              <div class="car-details">
+                <h4>Chevrolet Corvette White</h4>
+                <p>Classic power in an exquisite color. Chevrolet Corvette White: power, dynamics and style for true connoisseurs.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">1350 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">1200 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">1000 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+            
+            <article class="item">
+              <img src="https://testologia.ru/cars-images/12.png" alt="Ford Mustang Convertible Black">
+              <div class="car-details">
+                <h4>Ford Mustang Convertible Black</h4>
+                <p>A legend in an open format. Ford Mustang Convertible Black: 450 hp, iconic style and freedom under the open sky.</p>
+                <div class="car-action">
+                  <ul>
+                    <li>
+                      <div class="car-duration">1 Day</div>
+                      <div class="car-price">1250 $</div>
+                    </li>
+                    <li>
+                      <div class="car-duration">1-3 Day</div>
+                      <div class="car-price">1150 $<span>/Day</span></div>
+                    </li>
+                    <li>
+                      <div class="car-duration">3+ Day</div>
+                      <div class="car-price">1000 $<span>/Day</span></div>
+                    </li>
+                  </ul>
+                  <a href="#" class="button button-white">Book</a>
+                </div>
+              </div>
+            </article>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="request-form">
+    <div class="container">
+      <img src="images/order-car.png"  alt="Car">
+      <form>
+        <h3>Book a car</h3>
+        <p>Fill in your contact information and we will call you back to discuss the details and confirm your booking.</p>
+        <div class="form-inputs">
+          <input type="text" placeholder="Car"/>
+          <input type="text" placeholder="Your name"/>
+          <input type="text" placeholder="Phone"/>
+          <button class="button" type="button">Book now</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Lux cars logo" />
+      </div>
+      <div class="copyrights">
+        Copyrights
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
